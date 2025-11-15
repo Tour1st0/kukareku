@@ -1,3 +1,0 @@
-FROM codestral
-PARAMETER num_ctx 4096
-PARAMETER num_predict 512
