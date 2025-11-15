@@ -1,30 +1,30 @@
-2025-11-15 21:20:49,404 - websocket_manager - INFO - WebSocketManager initialized.
-2025-11-15 21:20:49,405 - price_fetcher - INFO - PriceFetcher initialized.
-2025-11-15 21:20:49,405 - order_manager - INFO - OrderManager initialized.
-2025-11-15 21:20:49,413 - telegram_monitor - INFO - TelegramMonitor initialized.
-2025-11-15 21:20:49,413 - __main__ - INFO - All components initialized.
-2025-11-15 21:20:49,413 - __main__ - INFO - Starting bot services...
-2025-11-15 21:20:49,413 - price_fetcher - INFO - Starting PriceFetcher...
-2025-11-15 21:20:49,413 - websocket_manager - INFO - Starting WebSocketManager and initializing exchanges...
-2025-11-15 21:20:49,419 - websocket_manager - INFO - Initialized bybit exchange.
-2025-11-15 21:20:49,424 - websocket_manager - INFO - Initialized mexc exchange.
-2025-11-15 21:20:49,428 - websocket_manager - INFO - Initialized gate exchange.
-2025-11-15 21:20:49,431 - websocket_manager - INFO - Initialized bingx exchange.
-2025-11-15 21:20:49,431 - websocket_manager - INFO - WebSocketManager started successfully.
-2025-11-15 21:20:49,431 - price_fetcher - INFO - PriceFetcher started. Ready to fetch prices on demand.
-2025-11-15 21:20:49,431 - order_manager - INFO - Connecting and configuring exchanges...
-2025-11-15 21:20:53,062 - order_manager - INFO - BYBIT: Position mode set to 'hedged'.
-2025-11-15 21:20:53,062 - order_manager - INFO - Attempting to set leverage to 3x for BYBIT...
-2025-11-15 21:20:53,797 - order_manager - INFO - BYBIT: Leverage was already set to 3x.
-2025-11-15 21:20:53,797 - order_manager - INFO - ✅ BYBIT connected and configured successfully.
-2025-11-15 21:21:23,987 - order_manager - INFO - MEXC: Position mode set to 'hedged'.
-2025-11-15 21:21:23,987 - order_manager - INFO - Attempting to set leverage to 3x for MEXC...
-2025-11-15 21:21:25,211 - order_manager - INFO - MEXC: Successfully set leverage to 3x.
-2025-11-15 21:21:25,211 - order_manager - INFO - ✅ MEXC connected and configured successfully.
-2025-11-15 21:21:25,211 - order_manager - INFO - Disabling fetchCurrencies for Gate.io to prevent timeout.
-2025-11-15 21:21:25,217 - order_manager - INFO - Applying special connection logic for Gate.io...
-2025-11-15 21:21:25,217 - order_manager - WARNING - Gate.io fetch_currencies call bypassed to prevent timeout.
-2025-11-15 21:22:26,920 - order_manager - ERROR - ❌ Failed to connect to GATE: gateio GET https://api.gateio.ws/api/v4/spot/currency_pairs
+2025-11-15 22:23:17,288 - websocket_manager - INFO - WebSocketManager initialized.
+2025-11-15 22:23:17,288 - price_fetcher - INFO - PriceFetcher initialized.
+2025-11-15 22:23:17,288 - order_manager - INFO - OrderManager initialized.
+2025-11-15 22:23:17,290 - telegram_monitor - INFO - TelegramMonitor initialized.
+2025-11-15 22:23:17,290 - __main__ - INFO - All components initialized.
+2025-11-15 22:23:17,291 - __main__ - INFO - Starting bot services...
+2025-11-15 22:23:17,291 - price_fetcher - INFO - Starting PriceFetcher...
+2025-11-15 22:23:17,291 - websocket_manager - INFO - Starting WebSocketManager and initializing exchanges...
+2025-11-15 22:23:17,297 - websocket_manager - INFO - Initialized bybit exchange.
+2025-11-15 22:23:17,302 - websocket_manager - INFO - Initialized mexc exchange.
+2025-11-15 22:23:17,307 - websocket_manager - INFO - Initialized gate exchange.
+2025-11-15 22:23:17,311 - websocket_manager - INFO - Initialized bingx exchange.
+2025-11-15 22:23:17,311 - websocket_manager - INFO - WebSocketManager started successfully.
+2025-11-15 22:23:17,311 - price_fetcher - INFO - PriceFetcher started. Ready to fetch prices on demand.
+2025-11-15 22:23:17,312 - order_manager - INFO - Connecting and configuring exchanges...
+2025-11-15 22:23:21,401 - order_manager - INFO - BYBIT: Position mode set to 'hedged'.
+2025-11-15 22:23:21,402 - order_manager - INFO - Attempting to set leverage to 3x for BYBIT...
+2025-11-15 22:23:22,254 - order_manager - INFO - BYBIT: Leverage was already set to 3x.
+2025-11-15 22:23:22,255 - order_manager - INFO - ✅ BYBIT connected and configured successfully.
+2025-11-15 22:23:32,914 - order_manager - INFO - MEXC: Position mode set to 'hedged'.
+2025-11-15 22:23:32,914 - order_manager - INFO - Attempting to set leverage to 3x for MEXC...
+2025-11-15 22:23:34,142 - order_manager - INFO - MEXC: Successfully set leverage to 3x.
+2025-11-15 22:23:34,143 - order_manager - INFO - ✅ MEXC connected and configured successfully.
+2025-11-15 22:23:34,143 - order_manager - INFO - Disabling fetchCurrencies for Gate.io to prevent timeout.
+2025-11-15 22:23:34,151 - order_manager - INFO - Applying special connection logic for Gate.io...
+2025-11-15 22:23:34,151 - order_manager - WARNING - Gate.io fetch_currencies call bypassed to prevent timeout.
+2025-11-15 22:24:34,310 - order_manager - ERROR - ❌ Failed to connect to GATE: gateio GET https://api.gateio.ws/api/v4/futures/usdt/contracts
 Traceback (most recent call last):
   File "/Users/mac/Desktop/arbitrage_bot/.venv/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py", line 204, in fetch
     http_response = await response.text(errors='replace')
@@ -61,9 +61,9 @@ Traceback (most recent call last):
   File "/Users/mac/Desktop/arbitrage_bot/.venv/lib/python3.11/site-packages/ccxt/async_support/gate.py", line 985, in fetch_markets
     promises = await asyncio.gather(*rawPromises)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mac/Desktop/arbitrage_bot/.venv/lib/python3.11/site-packages/ccxt/async_support/gate.py", line 994, in fetch_spot_markets
-    spotMarketsResponse = await self.publicSpotGetCurrencyPairs(params)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/arbitrage_bot/.venv/lib/python3.11/site-packages/ccxt/async_support/gate.py", line 1107, in fetch_contract_markets
+    response = await self.publicFuturesGetSettleContracts(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/mac/Desktop/arbitrage_bot/.venv/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py", line 832, in request
     return await self.fetch2(path, api, method, params, headers, body, config)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,19 +72,19 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/mac/Desktop/arbitrage_bot/.venv/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py", line 233, in fetch
     raise RequestTimeout(details) from e
-ccxt.base.errors.RequestTimeout: gateio GET https://api.gateio.ws/api/v4/spot/currency_pairs
-2025-11-15 21:22:28,544 - ccxt.base.exchange - WARNING - gateio requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
-2025-11-15 21:22:28,545 - asyncio - ERROR - Unclosed client session
-client_session: <aiohttp.client.ClientSession object at 0x2d03a1650>
-2025-11-15 21:22:31,315 - order_manager - INFO - BINGX: Position mode set to 'hedged'.
-2025-11-15 21:22:31,315 - order_manager - INFO - Attempting to set leverage to 3x for BINGX...
-2025-11-15 21:22:33,219 - order_manager - INFO - BINGX: Successfully set leverage to 3x.
-2025-11-15 21:22:33,219 - order_manager - INFO - ✅ BINGX connected and configured successfully.
-2025-11-15 21:22:33,219 - __main__ - INFO - Services connected. Starting main tasks...
-2025-11-15 21:22:33,221 - telegram_monitor - INFO - Connecting to Telegram...
-2025-11-15 21:22:34,289 - telegram_monitor - INFO - Telegram client started successfully.
-2025-11-15 21:22:34,454 - telegram_monitor - INFO - Successfully resolved channel: @futures_spreads_spam
-2025-11-15 21:22:34,454 - telegram_monitor - INFO - Started monitoring 1 channel(s)...
-2025-11-15 21:32:23,400 - __main__ - INFO - СИГНАЛ #1: TEL-USDT | Spread: 3.57% | Цены: {'mexc': 0.005997, 'bingx': 0.006211}
-2025-11-15 21:32:23,400 - order_manager - WARNING - Market details not found for TEL-USDT on mexc.
-2025-11-15 21:32:23,400 - order_manager - ERROR - Could not get market details for TEL-USDT. Aborting.
+ccxt.base.errors.RequestTimeout: gateio GET https://api.gateio.ws/api/v4/futures/usdt/contracts
+2025-11-15 22:24:37,734 - order_manager - INFO - BINGX: Position mode set to 'hedged'.
+2025-11-15 22:24:37,734 - order_manager - INFO - Attempting to set leverage to 3x for BINGX...
+2025-11-15 22:24:39,559 - order_manager - INFO - BINGX: Successfully set leverage to 3x.
+2025-11-15 22:24:39,560 - order_manager - INFO - ✅ BINGX connected and configured successfully.
+2025-11-15 22:24:39,560 - __main__ - INFO - Services connected. Starting main tasks...
+2025-11-15 22:24:39,561 - telegram_monitor - INFO - Connecting to Telegram...
+2025-11-15 22:24:41,727 - telegram_monitor - INFO - Telegram client started successfully.
+2025-11-15 22:24:41,931 - telegram_monitor - INFO - Successfully resolved channel: @futures_spreads_spam
+2025-11-15 22:24:41,931 - telegram_monitor - INFO - Started monitoring 1 channel(s)...
+2025-11-15 22:31:22,823 - ccxt.base.exchange - WARNING - gateio requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+2025-11-15 22:31:22,823 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x2dcaaead0>
+2025-11-15 22:36:22,563 - __main__ - INFO - СИГНАЛ #1: TITN-USDT | Spread: 3.60% | Цены: {'bingx': 0.0723, 'mexc': 0.0749}
+2025-11-15 22:36:22,569 - order_manager - WARNING - Market details not found for TITN-USDT on mexc.
+2025-11-15 22:36:22,570 - order_manager - ERROR - Could not get market details for TITN-USDT. Aborting.
