@@ -1,0 +1,62 @@
+{
+  "ARIAIP": {
+    "symbol": "ARIAIP",
+    "contracts": {
+      "BNB SMART CHAIN (BEP20)": "0x2a7e3392458307493c86388d5e544aad93286836",
+      "STORY": "0xc9cbbd8f211300dd0e7a3933b7aeedac6f61dd52"
+    },
+    "date_added": "2025-11-11",
+    "last_verified": "2025-11-11",
+    "reference_price": 0.0925,
+    "exchanges_found": [
+      "bingx"
+    ]
+  },
+  "TRUTH": {
+    "symbol": "TRUTH",
+    "contracts": {
+      "SUI NETWORK": "0x0a48f85a3905cfa49a652bdb074d9e9fabad27892d54afaa5c9e0adeb7ac3cdf::swarm_network_token::swarm_network_token"
+    },
+    "date_added": "2025-11-11",
+    "last_verified": "2025-11-11",
+    "reference_price": 0.0290065,
+    "exchanges_found": [
+      "bingx"
+    ]
+  },
+  "AMP": {
+    "symbol": "AMP",
+    "contracts": {
+      "ETHEREUM": "0xff20817765cb7f73d4bde2e66e067e58d11095c2"
+    },
+    "date_added": "2025-11-11",
+    "last_verified": "2025-11-11",
+    "reference_price": 0.0027685,
+    "exchanges_found": [
+      "mexc"
+    ]
+  },
+  "MEGA": {
+    "symbol": "MEGA",
+    "contracts": {
+      "ETHEREUM": "0x3218a02f8f8b5c3894ce30eb255f10bcba13e654",
+      "TRON20": "twdspdkepd6bnhfwzgyfqz2gy9qrrzaiub"
+    },
+    "date_added": "2025-11-11",
+    "last_verified": "2025-11-11",
+    "reference_price": 0.46412,
+    "exchanges_found": [
+      "bingx",
+      "mexc"
+    ]
+  },
+  "NB": {
+    "symbol": "NB",
+    "contracts": {
+      "BNB SMART CHAIN (BEP20)": "0xc2bd425a63800731e3ae42b6596bdd783299fcb1"
+    },
+    "date_added": "2025-11-11",
+    "last_verified": "2025-11-11",
+    "reference_price": 0.0847
+  }
+}

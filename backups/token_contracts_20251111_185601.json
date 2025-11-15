@@ -1,0 +1,15 @@
+{
+  "ARIAIP": {
+    "symbol": "ARIAIP",
+    "contracts": {
+      "BNB SMART CHAIN (BEP20)": "0x2a7e3392458307493c86388d5e544aad93286836",
+      "STORY": "0xc9cbbd8f211300dd0e7a3933b7aeedac6f61dd52"
+    },
+    "date_added": "2025-11-11",
+    "last_verified": "2025-11-11",
+    "reference_price": 0.0925,
+    "exchanges_found": [
+      "bingx"
+    ]
+  }
+}
